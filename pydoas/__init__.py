@@ -11,9 +11,9 @@
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
 # See BSD 3-Clause License for more details 
 # (https://opensource.org/licenses/BSD-3-Clause)
-from pkg_resources import get_distribution
+from importlib.metadata import version
 
-__version__ = get_distribution('pydoas').version
+__version__ = version('pydoas')
 
 from os.path import abspath, dirname
 
